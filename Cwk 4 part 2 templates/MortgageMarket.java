@@ -13,7 +13,10 @@ public class MortgageMarket {
     List<Lender> lenders = Lender.getLenders();
     List<Property> properties = Property.getProperties();
 
-    public MortgageMarket() {
+    public MortgageMarket(List<Borrower> borrowers, List<Lender> lenders, List<Property> properties) {
+        this.borrowers = borrowers;
+        this.lenders = lenders;
+        this.properties = properties;
     }
 
     public List<Borrower> getBorrowers() {

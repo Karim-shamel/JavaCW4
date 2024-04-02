@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class ProcessedApplication extends Application {
 
     // create a constructor to initialize ProcessedApplication's objects.
@@ -49,8 +51,9 @@ public class ProcessedApplication extends Application {
     }
 
     public double getLoanEstimate(){
-        if(getStatus() == "Approved"){
-            loanEstimate = property.getExpectedSalePrice() + lender.getLenderFees() + (lender.getInterestRate()*property.getExpectedSalePrice());
+        if(Objects.equals(getStatus(), "Approved")){
+            loanEstimate = property.getExpectedSalePrice() + lender.getLenderFees() +
+                    (lender.getInterestRate()*property.getExpectedSalePrice());
         }
         else{
             loanEstimate = -1;

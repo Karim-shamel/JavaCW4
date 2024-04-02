@@ -32,11 +32,15 @@ public class Application {
     }
 
     public void setTotalAssets() {
-        this.totalAssets = borrower.getAssets().getBankAccounts().getCurrentBalance()+borrower.getAssets().getRealEstate()+borrower.getAssets().getInvestments()+borrower.getAssets().getProceeds()+borrower.getAssets().getGifted();
+        this.totalAssets = borrower.getAssets().getBankAccounts().getCurrentBalance()+borrower.getAssets().getRealEstate()+borrower.
+                getAssets().getInvestments()+borrower.getAssets().getProceeds()+borrower.getAssets().getGifted();
     }
 
     public void setTotalLiabilities() {
-        this.totalLiabilities = borrower.getDebts().getCurrentMortgage()+borrower.getDebts().getLiens()+borrower.getDebts().getAlimony()+borrower.getDebts().getChildSupport()+borrower.getDebts().getCarLoans()+borrower.getDebts().getCreditCards()+borrower.getDebts().getRealEstateTaxes()+borrower.getDebts().getHazardInsurance()+borrower.getDebts().getHOAFees();
+        this.totalLiabilities = borrower.getDebts().getCurrentMortgage()+borrower.getDebts().getLiens()+borrower.
+                getDebts().getAlimony()+borrower.getDebts().getChildSupport()+borrower.getDebts().getCarLoans()+
+                borrower.getDebts().getCreditCards()+borrower.getDebts().getRealEstateTaxes()+borrower.getDebts().
+                getHazardInsurance()+borrower.getDebts().getHOAFees();
     }
 
     public String getApplicationNumber() {
