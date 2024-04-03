@@ -6,11 +6,11 @@ public class MortgageImplementer implements MLH {
     private List<Borrower> borrowers;
     private List<Property> properties;
     private List<Lender> lenders;
+
     @Override
     public MortgageMarket initializeMortgageMarket(int numOFBorrowers, int numOFProperties, int numOFLenders) {
         return new MortgageMarket(borrowers, lenders, properties);
     }
-
 
     @Override
     public Application apply(Borrower b, Property p, Lender l) {

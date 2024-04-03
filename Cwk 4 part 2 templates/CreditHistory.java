@@ -3,11 +3,11 @@ public class CreditHistory {
     // Create a list of methods to get and retrieve credithistory' informtion.
     // Credithistory usually has the following type of information:
     /*
-   • Bankruptcies
-   • Collections
-   • Foreclosures
-   • Delinquencies
-    * */
+     * • Bankruptcies
+     * • Collections
+     * • Foreclosures
+     * • Delinquencies
+     */
 
     int bankruptcies;
     double collections;

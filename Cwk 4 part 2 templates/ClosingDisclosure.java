@@ -7,10 +7,11 @@ public class ClosingDisclosure {
     // ClosingDisclosure usually have the following type of information
 
     /*
-    * Loan_ID
-    * Closing_Date
-    * ClosingCosts (Average closing costs for the buyer run between about 2% and 6% of the loan amount. )
-    * */
+     * Loan_ID
+     * Closing_Date
+     * ClosingCosts (Average closing costs for the buyer run between about 2% and 6%
+     * of the loan amount. )
+     */
 
     // Define methods to calculate ClosingCosts based on the loan amount
     String loanID;

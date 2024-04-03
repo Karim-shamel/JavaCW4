@@ -1,18 +1,18 @@
 public class Income {
     // Create a constructor to initialize Income's objects.
     // and create a list of methods to retrieve and get Income's information.
-    // Income  usually contains the following type of information:
+    // Income usually contains the following type of information:
 
     /*
-    *
-* Base Employment Income
-* Overtime
-* Bonuses
-* Commissions
-* Dividends/Interest
-* Net Rental Income
-* Other
-*/
+     *
+     * Base Employment Income
+     * Overtime
+     * Bonuses
+     * Commissions
+     * Dividends/Interest
+     * Net Rental Income
+     * Other
+     */
 
     double baseIncome;
     double overtime;
@@ -22,7 +22,8 @@ public class Income {
     double netRentalIncome;
     double other;
 
-    public Income(double baseIncome, double overtime, double bonuses, double commissions, double dividends, double netRentalIncome, double other) {
+    public Income(double baseIncome, double overtime, double bonuses, double commissions, double dividends,
+            double netRentalIncome, double other) {
         this.baseIncome = baseIncome;
         this.overtime = overtime;
         this.bonuses = bonuses;
@@ -60,7 +61,8 @@ public class Income {
         return other;
     }
 
-    public double getTotalIncome(){
-        return getBaseIncome()+getOvertime()+getCommissions()+getBonuses()+getDividends()+getNetRentalIncome()+getOther();
+    public double getTotalIncome() {
+        return getBaseIncome() + getOvertime() + getCommissions() + getBonuses() + getDividends() + getNetRentalIncome()
+                + getOther();
     }
 }

@@ -1,20 +1,19 @@
 import java.util.*;
 
-
 public class Property {
 
-   // create a constructor to construct property objects,
+    // create a constructor to construct property objects,
     // and a list of methods to get and retrieve the property's information
     //
-   //   Properties usually have the following type of information:
-   /*
-   • Street address
-   • Expected sales price
-   • Type of home (single-family residence, condo, etc.)
-   • Size of property
-   • Real estate taxes (annual)
-   • Homeowner’s association dues (HOA)
-    */
+    // Properties usually have the following type of information:
+    /*
+     * • Street address
+     * • Expected sales price
+     * • Type of home (single-family residence, condo, etc.)
+     * • Size of property
+     * • Real estate taxes (annual)
+     * • Homeowner’s association dues (HOA)
+     */
 
     String streetAddress;
     double expectedSalePrice;
@@ -24,7 +23,8 @@ public class Property {
     double HOA;
     private static List<Property> properties = new ArrayList<>();
 
-    public Property(String streetAddress, double expectedSalePrice, String homeType, float propertySize, double annualTaxes, double HOA) {
+    public Property(String streetAddress, double expectedSalePrice, String homeType, float propertySize,
+            double annualTaxes, double HOA) {
         this.streetAddress = streetAddress;
         this.expectedSalePrice = expectedSalePrice;
         this.homeType = homeType;

@@ -4,17 +4,19 @@ public class LoanEstimate {
     // LoanEstimate usually have the following type of information
 
     /*
-    Applicant_Name (the Borrower's name)
-    Loan_amount
-    Loan_Term
-    Interest_rate
-    Monthly_Principal_AND_Interest
-    Mortgage_Insurance
-    Estimated_Escrow
-    Estimated_Total_Monthly_Payment (Monthly_Principal_AND_Interest + Mortgage_Insurance + Estimated_Escrow)
-    * */
+     * Applicant_Name (the Borrower's name)
+     * Loan_amount
+     * Loan_Term
+     * Interest_rate
+     * Monthly_Principal_AND_Interest
+     * Mortgage_Insurance
+     * Estimated_Escrow
+     * Estimated_Total_Monthly_Payment (Monthly_Principal_AND_Interest +
+     * Mortgage_Insurance + Estimated_Escrow)
+     */
 
-    // Define a method that calculates the Estimated_Total_Monthly_Payment based on the information
+    // Define a method that calculates the Estimated_Total_Monthly_Payment based on
+    // the information
     // of Loan_amount, Loan_Term, Interest_rate
 
     Borrower applicantName;
@@ -26,7 +28,8 @@ public class LoanEstimate {
     double estimatedEscrow;
     double estimatedMonthlyPayment;
 
-    public LoanEstimate(Borrower applicantName, double loanAmount, float loanTerm, float interest, double MPAI, double mortgageInsurance, double estimatedEscrow) {
+    public LoanEstimate(Borrower applicantName, double loanAmount, float loanTerm, float interest, double MPAI,
+            double mortgageInsurance, double estimatedEscrow) {
         this.applicantName = applicantName;
         this.loanAmount = loanAmount;
         this.loanTerm = loanTerm;
